@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration for  Drug Information</title>
+    <style>
+        body {
+            background-color: green;
+            color: lightblue;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: lightgreen;
+            color: black;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register Drug Information</h1>
+    <form method="POST" action="AdminAddDrug.php">
+        <label for="Drug_No">Drug_No:</label>
+        <input type="number" name="Drug_No" id="Drug_No" required><br>
+
+        <label for="Drug_Name">Drug_Name:</label>
+        <input type="text" name="Drug_Name" id="Drug_Name" required><br>
+        
+        <label for="Serial_Numbe">Serial_Number:</label>
+        <input type="text" name="Serial_Numbe" id="Serial_Numbe" required><br>
+
+        <label for="Quantiy">Quatity:</label>
+        <input type="text" name="Quantiy" id="Quantiy" required><br>
+
+        <label for="Man_DATE">Man_DATE:</label>
+        <input type="date" name="Man_DATE" id="Man_DATE" required><br>
+
+        <label for="Exp_Date">Exp_Date:</label>
+        <input type="date" name="Exp_Date" id="Exp_Date" required><br>
+
+        <input type="submit" value="INSERT">
+    </form>
+</body>
+</html>

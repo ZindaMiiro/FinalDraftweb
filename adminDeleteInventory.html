@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Drug</title>
+    <style>
+.button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color: lightgreen;
+      color: black;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10mm;
+      margin-bottom: 10px;
+    }
+    body {
+      background-color: green;
+      color: lightblue;
+    }
+    </style>
+</head>
+<body>
+    <h1>Delete Drug from DB</h1>
+    <form action="AdminDeleteDrug.php" method="POST">
+        <label for="Drug_Name">Drug_Name:</label>
+        <input type="text" name="Drug_Name" id="Drug_Name" required>
+        <input type="submit" value="Delete">
+    </form>
+    <p> View Inventory Table</p>
+<div class="button-container">
+    <a href="ViewPharmaInventory.php">
+      <button class="button">View Pharma Inventory</button>
+    </a>
+  </div>
+    
+</body>

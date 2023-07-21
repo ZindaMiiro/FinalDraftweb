@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Prescription</title>
+    <style>
+        body {
+            background-color: green;
+            color: lightblue;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: lightgreen;
+            color: black;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insert Prescription</h1>
+    <form method="POST" action="insert_prescription.php">
+        <label for="PatientID">Patient ID:</label>
+        <input type="number" name="PatientID" id="PatientID" required><br>
+
+        <label for="DoctorID">Doctor ID:</label>
+        <input type="number" name="DoctorID" id="DoctorID" required><br>
+
+        <label for="Drug_No">Drug no:</label>
+        <input type="text" name="Drug_No" id="Drug_No" required><br>
+
+        <label for="Dosage">Dosage:</label>
+        <input type="text" name="Dosage" id="Dosage" required><br>
+
+        <label for="Start_date">Start date:</label>
+        <input type="date" name="Start_date" id="Start_date" required><br>
+
+        <label for="End_date">End Date:</label>
+        <input type="date" name="End_date" id="End_date" required><br>
+
+        <input type="submit" value="INSERT">
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin DOctor Panel</title>
+    <style>
+        body {
+      background-image:url("DoctorHome.png.jpeg");
+      
+    }
+
+    h1, h2 {
+      color: rgb(54, 60, 94); /* Set text color to dark blue */
+    }
+    .button {
+              display: inline-block;
+              padding: 10px 20px;
+              font-size: 16px;
+              text-align: center;
+              text-decoration: none;
+              background-color: rgb(58, 23, 120);
+              color: rgb(28, 175, 224);
+              border-radius: 8px;
+              border: none;
+              cursor: pointer;
+              margin-right: 10mm;
+              margin-bottom: 10px;
+            }
+            .p{
+              color:black;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Doctor INFORMATION</h1>
+    <p>Click the following for assistance</p>
+    <p>Assit in adding a Doctor to the system</p>
+    
+    <div class="button-container">
+        <a href="AdminAddDoctor.html">
+            <button class="button">+Doctor</button>
+        </a>
+    </div>
+<p> View Doctor Table</p>
+<div class="button-container">
+    <a href="patientviewdoctor.php">
+        <button class="button" onclick="showAlert()">View Doctors Info</button>
+    </a>
+</div>
+    </div>
+    <p> Delete patients from  Table</p>
+    <div class="button-container">
+        <a href="AdminDeleteDoc.html">
+            <button class="button">Delete Doctor Info</button>
+        </a>
+    </div>
+</body>
+</html>

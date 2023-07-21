@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PharmacistLogin Page</title>
+    <style>
+       body {
+      background-image:url("pharmacistlogin.png.jpeg");
+      display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+    }
+
+    input[type="submit"] {
+      background-color: rgb(58, 23, 120);
+      color: rgb(28, 175, 224);
+    }
+    h1, h2 ,p{
+      color: rgb(54, 60, 94); /* Set text color to dark blue */
+    }
+    </style>
+</head>
+<body>
+    <h2>Pharmacist Login Page</h2>
+    <h3>Enter the following:</h3>
+    <form method="post" action="PharmacistLogin.php">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+    <p>Only accesible to Users entered in our system</p>
+</body>
+</html>
+
+

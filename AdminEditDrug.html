@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Drug Information</title>
+    <style>
+        body {
+            background-color: green;
+            color: lightblue;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        select, input[type="submit"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: lightgreen;
+            color: black;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit Drug Information</h1>
+    <form method="POST" action="AdmineditDrug.php">
+        <label for="Drug_Name">Select Drug:</label>
+        <select name="Drug_Name" id="Drug_Name" required>
+            <option value="" disabled selected>Select a drug</option>
+            <option value="Drug_A">Drug_A</option>
+            <option value="Drug_B">Drug_B</option>
+            <option value="Drug1">Drug1</option>
+            <option value="Drug405">Drug405</option>
+            <!-- Add more drug options here -->
+        </select><br>
+
+        <label for="Column_Name">Select Column:</label>
+        <select name="Column_Name" id="Column_Name" required>
+            <option value="" disabled selected>Select a column</option>
+            <option value="Drug_No">Drug No</option>
+            <option value="Drug_Name">Drug Name</option>
+            <option value="Serial_Number">Serial Number</option>
+            <option value="Quantiy">Quantity</option>
+            <option value="Man_DATE">Man DATE</option>
+            <option value="Exp_Date">Exp DATE</option>
+            <!-- Add more column options here -->
+        </select><br>
+
+        <label for="New_Value">New Value:</label>
+        <input type="text" name="New_Value" id="New_Value" required><br>
+
+        <input type="submit" name="submit" value="Update">
+    </form>
+</body>
+</html>
